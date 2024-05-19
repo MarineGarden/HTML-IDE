@@ -1,5 +1,21 @@
 (function(){
 
+	(function( name , fun ){
+  
+  	return {
+    
+    	name:name,
+      
+      fun:fun
+    
+    };
+  
+  })( "remove default body margin" , function(){
+  
+  	document.body.style.margin = "0";
+  
+  } ).fun();
+
 	var test = (function( name , fun ){
   
   	return {
