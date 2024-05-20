@@ -16,7 +16,21 @@
   
   } ).fun();
 
-	var test = (function( name , fun ){
+	(function( name , fun ){
+  
+  	return {
+    
+    	name:name,
+      
+      fun:fun
+    
+    };
+  
+  })( "append into body" , function( dom ){
+  
+  	document.body.appendChild( dom );
+  
+  } ).fun( (function( name , fun ){
   
   	return {
     
@@ -90,7 +104,6 @@
   
   	return window.innerHeight/2 + "px";
   
-  } ).fun() , "#000" ) );
-  document.body.appendChild( test );
+  } ).fun() , "#000" ) ) );
   
 })();
