@@ -1,2 +1,2 @@
 # HTML-IDE
-still under development
+Just copy the JS.txt into JSFiddle's js window and see what it happens.
