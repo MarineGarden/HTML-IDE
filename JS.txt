@@ -61,7 +61,21 @@
   
   	return window.innerWidth + "px";
   
-  } ).fun() , "100px" , "#034f20" );
+  } ).fun() , (function( name , fun ){
+  
+  	return {
+    
+    	name:name,
+      
+      fun:fun
+    
+    };
+  
+  })( "get half of window inner height" , function(){
+  
+  	return window.innerHeight/2 + "px";
+  
+  } ).fun() , "#808080" );
   document.body.appendChild( test );
   
 })();
