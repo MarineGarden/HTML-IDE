@@ -26,6 +26,21 @@
     
     };
   
+  })( "set opacity to 0.5" , function( dom ){
+  
+  	dom.style.opacity = 0.5;
+    return dom;
+  
+  } ).fun( (function( name , fun ){
+  
+  	return {
+    
+    	name:name,
+      
+      fun:fun
+    
+    };
+  
   })( "giveItSizeAndColor" , function( dom , width , height, color ){
   
   	dom.style.width = width;
@@ -70,12 +85,12 @@
       fun:fun
     
     };
-  
+  	
   })( "get half of window inner height" , function(){
   
   	return window.innerHeight/2 + "px";
   
-  } ).fun() , "#808080" );
+  } ).fun() , "#000" ) );
   document.body.appendChild( test );
   
 })();
