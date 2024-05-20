@@ -47,7 +47,21 @@
   
   	return document.createElement( tagName );
   
-  } ).fun( "canvas" ) , "150px" , "100px" , "#034f20" );
+  } ).fun( "canvas" ) , (function( name , fun ){
+  
+  	return {
+    
+    	name:name,
+      
+      fun:fun
+    
+    };
+  
+  })( "get window inner width" , function(){
+  
+  	return window.innerWidth + "px";
+  
+  } ).fun() , "100px" , "#034f20" );
   document.body.appendChild( test );
   
 })();
